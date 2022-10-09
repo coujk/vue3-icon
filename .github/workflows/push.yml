@@ -25,9 +25,9 @@ jobs:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn -v
-    # - run: yarn generate
-    - run: yarn build
-    - run: yarn build-bundle
+    - run: yarn run generate
+    - run: yarn run build
+    - run: yarn run build-bundle
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
@@ -35,7 +35,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-    - run: yarn publish
+    - run: yarn run publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: feishu notification
