@@ -37,12 +37,4 @@ jobs:
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-    - name: feishu notification
-      uses: foxundermoon/feishu-action@v1
-      with:
-        url: ${{ secrets.FEISHU_BOT_WEBHOOK_URL }}
-        title: Juuust-vue-icon Updates!
-        text: |
-          兄弟们，咱们的图标更新啦！
-          请使用 yarn upgrade juuust-vue-icon --latest 更新。
-          在线查看图标：https://leadream.github.io/juuust-vue-icon/
+    - run: sh feishu.sh
