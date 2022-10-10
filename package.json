@@ -1,6 +1,6 @@
 {
   "name": "metaMaker-icons",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "repository": "https://github.com/coujk/vue3-icon.git",
   "main": "bundle/index.common.js",
   "files": [
