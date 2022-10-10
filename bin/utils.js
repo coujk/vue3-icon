@@ -1,4 +1,3 @@
-import { pinyin } from "pinyin-pro";
 const upperCamelCase = require("uppercamelcase");
 const parseName = (name, defaultStyle) => {
   const cleanedName = name.replace(/\//g, "-");
@@ -6,7 +5,7 @@ const parseName = (name, defaultStyle) => {
   const style = nameSlices[nameSlices.length - 1];
   return {
     name,
-    componentName: upperCamelCase(pinyin(cleanedName, { toneType: 'none' })),
+    componentName: upperCamelCase(cleanedName),
     style: style === "fill" || style === "stroke" ? style : defaultStyle,
   };
 };
