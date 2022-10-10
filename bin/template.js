@@ -12,8 +12,9 @@ const getAttrs = (style) => {
   const strokeAttrs = {
     ':stroke': 'color',
     'fill': 'none',
-    'stroke-width': 2,
+    'stroke-width': 0,
     'stroke-linecap': 'round',
+    'overflow': 'visible',
     'stroke-linejoin': 'round'
   }
   return Object.assign({}, baseAttrs, style==='fill' ? fillAttrs : strokeAttrs)
