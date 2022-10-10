@@ -13,3 +13,4 @@ if (typeof Vue !== "undefined") {
   }
 }
 Vue.use(store).use(router).mount("#app");
+  
