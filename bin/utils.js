@@ -1,5 +1,5 @@
-const upperCamelCase = require("uppercamelcase");
 import { pinyin } from "pinyin-pro";
+const upperCamelCase = require("uppercamelcase");
 const parseName = (name, defaultStyle) => {
   const cleanedName = name.replace(/\//g, "-");
   const nameSlices = cleanedName.split("-");
