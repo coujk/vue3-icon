@@ -13,11 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: pwd
-    - run: chmod +x feishu.sh
-    - run: sh /home/runner/work/vue3-icon/vue3-icon/.github/workflows/feishu.sh
+    - run: sh feishu.sh
+  icon_automation2:
+    name: figma icon automation2
+    runs-on: ubuntu-latest
+    steps:
+    - run: pwd
+    - run: find /home/runner/work/vue3-icon -name feishu
   icon_automation3:
-    name: figma icon automation
+    name: figma icon automation3
     runs-on: ubuntu-latest
     steps:
     - run: pwd
     - run: ls /home/runner/work/vue3-icon/vue3-icon
+    - run: find /home/runner/work/vue3-icon/vue3-icon -name feishu
