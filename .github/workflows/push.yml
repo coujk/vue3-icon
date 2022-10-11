@@ -12,5 +12,5 @@ jobs:
     name: figma icon automation
     runs-on: ubuntu-latest
     steps:
-    - run: pwd
-    - run: sh feishu.sh
+    - run: chmod +x /home/runner/work/vue3-icon/vue3-icon/feishu.sh
+    - run: sh /home/runner/work/vue3-icon/vue3-icon/feishu.sh
