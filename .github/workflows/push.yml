@@ -8,5 +8,5 @@ on:
       - package.json
 
 jobs:
-  icon_automation:
-    - run: sh https://github.com/coujk/vue3-icon/blob/master/.github/workflows/feishu.sh
+    - run: cd workflows
+    - run: sh ./feishu.sh
