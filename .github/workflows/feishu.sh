@@ -25,7 +25,7 @@ curl -X POST \
                         {
                             "tag": "text",
                             "un_escape": true,
-                            "text": "'$content'"
+                            "text": ""
                         }
                     ],
                     [
