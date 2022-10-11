@@ -26,4 +26,6 @@ jobs:
     steps:
     - run: pwd
     - run: ls /home/runner/work/vue3-icon/vue3-icon
-    - run: find /home/runner/work/vue3-icon/vue3-icon -name feishu
+    - run: curl -X POST -H "Content-Type: application/json" \
+            -d '{"msg_type":"text","content":{"text":"request example"}}' \
+            https://open.feishu.cn/open-apis/bot/v2/hook/02ecd487-071a-4663-963b-5cdd4eb3b5ec
