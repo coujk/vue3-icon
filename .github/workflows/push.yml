@@ -8,5 +8,4 @@ on:
       - package.json
 
 jobs:
-    - run: cd workflows
-    - run: sh ./feishu.sh
+    - run: pwd
