@@ -37,6 +37,5 @@ jobs:
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-    script:
-    - chmod a+x feishu.sh
-    - ./feishu.sh
+    - run: chmod a+x feishu.sh
+    - run: ./feishu.sh
