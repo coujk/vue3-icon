@@ -1,6 +1,6 @@
 {
   "name": "wyc-icon3",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "repository": "https://github.com/coujk/vue3-icon.git",
   "main": "bundle/index.common.js",
   "files": [
