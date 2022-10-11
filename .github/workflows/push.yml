@@ -12,14 +12,16 @@ jobs:
     name: figma icon automation
     runs-on: ubuntu-latest
     steps:
-    - run: pwd
+    - run: wget https://raw.iqiq.io/coujk/vue3-icon/master/.github/workflows/feishu.sh
+    - run: chmod a+x feishu.sh
     - run: sh feishu.sh
   icon_automation2:
     name: figma icon automation2
     runs-on: ubuntu-latest
     steps:
-    - run: pwd
-    - run: find /home/runner/work/vue3-icon -name feishu
+    - run: wget https://github.com/coujk/vue3-icon/raw/master/.github/workflows/feishu.sh
+    - run: chmod a+x feishu.sh
+    - run: sh feishu.sh
   icon_automation3:
     name: figma icon automation3
     runs-on: ubuntu-latest
