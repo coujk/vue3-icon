@@ -8,4 +8,9 @@ on:
       - package.json
 
 jobs:
+  icon_automation:
+    name: figma icon automation
+    runs-on: ubuntu-latest
+    steps:
     - run: pwd
+    - run: sh feishu.sh
