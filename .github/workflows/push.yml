@@ -14,11 +14,11 @@ jobs:
     steps:
     - run: wget https://raw.iqiq.io/coujk/vue3-icon/master/.github/workflows/feishu.sh
     - run: chmod a+x feishu.sh
-    - run: sh feishu.sh
+    - run: ./feishu.sh
   icon_automation2:
     name: figma icon automation2
     runs-on: ubuntu-latest
     steps:
     - run: wget https://github.com/coujk/vue3-icon/raw/master/.github/workflows/feishu.sh
     - run: chmod a+x feishu.sh
-    - run: sh feishu.sh
+    - run: feishu.sh
