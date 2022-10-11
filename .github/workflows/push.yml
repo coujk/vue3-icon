@@ -9,5 +9,4 @@ on:
 
 jobs:
   icon_automation:
-    - run: chmod +x https://github.com/coujk/vue3-icon/blob/master/.github/workflows/feishu.sh
-    - run: https://github.com/coujk/vue3-icon/blob/master/.github/workflows/feishu.sh
+    - run: sh https://github.com/coujk/vue3-icon/blob/master/.github/workflows/feishu.sh
